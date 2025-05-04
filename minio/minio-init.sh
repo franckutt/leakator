@@ -1,8 +1,6 @@
 #!/bin/sh
-
 # Exit on error
 set -e
-
 # Start MinIO temporarily in the background
 echo "Starting temporary MinIO server for initialization..."
 /usr/bin/minio server /data --console-address ":9001" &
